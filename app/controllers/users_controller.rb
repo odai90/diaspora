@@ -97,8 +97,6 @@ class UsersController < ApplicationController
     @user     = current_user
     @person   = @user.person
     @profile  = @user.profile
-    @services = @user.services
-    @step     = 0
 
     render "users/getting_started"
   end
